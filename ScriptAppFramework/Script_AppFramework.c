@@ -11,3 +11,6 @@ Appframework_Lib* CreateAppFrameworkLib(const char* name, void* Init_Func, void*
 	}
 	return NULL;
 }
+void DestroyAppFrameworkLib(Appframework_Lib* appframeworklib) {
+	free(appframeworklib);
+}

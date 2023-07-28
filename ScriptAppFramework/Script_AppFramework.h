@@ -18,3 +18,4 @@ typedef struct DebugScriptLib {
 	void (*CreateInterp_Func)(InterpType interp_type);
 }DebugScriptLib;
 Appframework_Lib* CreateAppFrameworkLib(const char* name, void* Init_Func, void* RegisterApi_Func, void* ScriptError_Func);
+void DestroyAppFrameworkLib(Appframework_Lib* appframeworklib);

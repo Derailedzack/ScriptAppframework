@@ -1,5 +1,5 @@
-#include"Script_AppFramework.h"
-#include<stdlib.h>
+#include "Script_AppFramework.h"
+#include <stdlib.h>
 Appframework_Lib* CreateAppFrameworkLib(const char* name, void* Init_Func, void* RegisterApi_Func, void* ScriptError_Func) {
 	Appframework_Lib* appframeworklib = malloc(sizeof(Appframework_Lib));
 	if (appframeworklib != NULL) {

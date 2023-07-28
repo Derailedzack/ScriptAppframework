@@ -17,5 +17,5 @@ typedef struct Appframework_Lib {
 typedef struct DebugScriptLib {
 	void (*CreateInterp_Func)(InterpType interp_type);
 }DebugScriptLib;
-Appframework_Lib* CreateAppFrameworkLib(const char* name, void* init_func, void* registerapi_Func, void* scripterror_func);
+Appframework_Lib* CreateAppFrameworkLib(const char* name, void* init_func, void* registerapi_func, void* scripterror_func);
 void DestroyAppFrameworkLib(Appframework_Lib* appframeworklib);
